@@ -4,6 +4,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* General Header Styling */
@@ -148,6 +150,19 @@ header > ul > li > a#active {
         padding: 10px 20px;
         font-size: 14px;
     }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+   .about-section{
+    margin:0px;
+    padding: 0px;
+    width: fit-content;
+   }
 }
 @media (max-width: 480px) {
     .showcasecard img {
@@ -200,9 +215,9 @@ div.section>div>h2{
 #blursection>h5>a:hover{
     font-size: 15px;
 }
-div.aboutsection{
+div.about-sectionsection{
     background: rgb(247, 247, 247);
-    width: 100%;
+    width: 90%;
     height: 400px;
 }
 #Products{
@@ -309,7 +324,7 @@ div.aboutsection{
 
         /* About Section Container */
         .about-section {
-            max-width: 900px;
+            max-width: 95%;
             margin: 40px auto;
             background: white;
             padding: 30px;
@@ -338,7 +353,7 @@ div.aboutsection{
         /* Why Choose Us List */
         .why-choose-us ul {
             list-style: none;
-            padding: 0;
+            padding: 0%;
         }
 
         .why-choose-us ul li {
@@ -352,7 +367,7 @@ div.aboutsection{
             content: "✔";
             color: rgb(90, 32, 105);
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 0px;
         }
 
         /* Collections Section */
