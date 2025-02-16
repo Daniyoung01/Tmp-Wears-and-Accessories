@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+    box-shadow: 1px 1px 2px 0px rgba(39, 35, 35, 0.5);
+    background: rgb(247, 247, 247);
+    z-index: 100;
+}
+
+header > img {
+    pointer-events: none;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Navigation Links Styling */
+header > ul > li > a {
+    text-decoration: none;
+    color: rgb(76, 30, 130);
+    font-weight: 600;
+    margin: 0 2.5px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12.5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover and active link styling */
+header > ul > li > a:hover,
+header > ul > li > a#active {
+    background-color: rgb(76, 30, 130);
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+}
+
+/* Responsive Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(76, 30, 130);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header > ul {
+        display: none; /* Hide the navigation links on mobile */
+        width: 100%;
+        text-align: center;
+    }
+
+    header > ul.active {
+        display: block; /* Show the links when the menu is active */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+
+    }
+
+    header > ul > li > a {
+        display: block;
+        padding: 10px 0;
+        margin: 0;
+        font-size: 18px;
+    }
+    div.section{
+        height: 80%;
+        width: auto;
+    }
+    #blursection{
+        margin: 50px 0px 50px 0px;
+    }
+    #blursection > h2{
+        font-size: 2em;
+    }
+    div.section{
+        background-position: center;
+        background-size: contain';
+    }
+    .showcasecard {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust for smaller screens */
+    }
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    div.section{
+        height: 200px;
+        width: auto;
+    }
+    .showcasecard {
+        gap: 10px;
+    }
+    
+    .product-card {
+        width: 170px;
+        padding: 10px;
+    }
+    
+    .product-card img {
+        height: 140px;
+    }
+    
+    .order-now {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .about-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .why-choose-us ul li {
+        font-size: 14px;
+    }
+
+    .collection-item {
+        min-width: 140px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .showcasecard img {
+        height: 120px; /* Even smaller height for mobile */
+    }
+}
+div.section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: url(section-background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.521);
+    
+    /* border-bottom: rgb(76, 30, 130) 6px solid; */
+}
+div.section>div>h2{
+    color: rgb(247, 247, 247);
+    font-size: 3em;
+    /* background: transparent; */
+    padding: 10px;
+    height: auto;
+    width: auto;
+    /* border: 1px white; */
+}
+#blursection{
+    /* background-color: red; */
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    background-color: rgba(90, 32, 105, 0.452);
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(255, 255, 255, 0);
+    /* text-align: center; */
+    margin: 100px 0px 100px 0px;
+}
+#blursection>h5{
+    color: rgb(247, 247, 247);
+    font-weight: 600;
+    font-family: 'Berlin Sans FB';
+}
+#blursection>h5>a{
+    color: rgb(247, 247, 247);
+    transition: 0.1s ease-in-out;
+}
+#blursection>h5>a:hover{
+    font-size: 15px;
+}
+div.aboutsection{
+    background: rgb(247, 247, 247);
+    width: 100%;
+    height: 400px;
+}
+#Products{
+    margin: 20px;
+    font-family: 'Poppin', sans-serif;
+    color: rgb(90, 32, 105);
+    font-family: 'Poppins', sans-serif; /* Choose your preferred font */
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Space between text and border */
+}
+#Products::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px; /* Thickness of the border */
+    background: linear-gradient(90deg, rgba(90, 32, 105, 0.8), rgb(255, 0, 0)); /* Two colors */
+    border-radius: 2px;
+
+    /* Animation */
+    animation: animateBorder 1.5s infinite alternate ease-in-out;
+}
+
+/* Keyframes for Border Animation */
+@keyframes animateBorder {
+    0% {
+        background: linear-gradient(90deg, rgba(90, 32, 105, 0.8), rgb(255, 0, 0));
+    }
+    100% {
+        background: linear-gradient(90deg, rgb(255, 0, 0), rgba(90, 32, 105, 0.8));
+    }
+}
+/* Main container */
+#shwpr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Grid layout for product showcase */
+.showcasecard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+/* Parent card styling */
+.product-card {
+    position: relative;
+    width: 220px; /* Set width */
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 10px; /* Add spacing between cards */
+}
+
+/* Hover effect: Scale up and darker shadow */
+.product-card:hover {
+    transform: scale(1.08);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Image styling */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* "Order Now" button */
+.order-now {
+    display: block;
+    width: 100%;
+    background: rgb(90, 32, 105);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Darker button on hover */
+.order-now:hover {
+    background: rgb(90, 32, 105);
+}
+
+        /* About Section Container */
+        .about-section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Headings */
+        .about-section h2 {
+            text-align: center;
+            color: rgb(90, 32, 105);
+        }
+
+        .about-section h3 {
+            color: rgb(90, 32, 105);
+            margin-top: 20px;
+        }
+
+        /* Paragraph Styling */
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Why Choose Us List */
+        .why-choose-us ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-choose-us ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .why-choose-us ul li::before {
+            content: "✔";
+            color: rgb(90, 32, 105);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Collections Section */
+        .collections {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .collection-item {
+            background: rgb(90, 32, 105);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 180px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .collection-item:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contact & CTA Section */
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact a {
+            display: inline-block;
+            background: rgb(90, 32, 105);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .contact a:hover {
+            background: rgb(70, 25, 85);
+        }
+        .contact a:active{
+            transform: scale(1.05);
+        }
+.footer {
+    background: rgb(90, 32, 105);
+    padding: 20px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: rgb(90, 32, 105);
+    font-size: 14px;
+    color: #e0e0e0;
+}
